@@ -50,8 +50,8 @@ const App = {
     }
   },
   computed: {
-    getCurrentStepIndex() {
-      return this.activeIndex
+    currentStep() {
+      return this.steps[this.activeIndex]
     },
     isResetBtnVisible() {
       return this.resetBtnVisible
